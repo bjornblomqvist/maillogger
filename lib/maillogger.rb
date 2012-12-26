@@ -3,12 +3,12 @@ require 'mail'
 
 class MailLogger
 
-  def LoggingMailer.delivery_method clazz,options
+  def self.delivery_method clazz,options
     @@clazz = clazz
     @@options = options
   end
   
-  def LoggingMailer.log_path path
+  def self.log_path path
     @@path = path
   end
 
