@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/bjornblomqvist/maillogger"
   gem.license = "MIT"
   gem.summary = %Q{A simple logger for the mail gem.}
-  gem.description = %Q{A delivery method that wrapps another delivery method and logs all successfull deliveries. It logs to ./log/emails/#{Time.now....}.eml}
+  gem.description = %Q{A delivery method that wrapps another delivery method and logs all successfull deliveries. It logs to ./log/emails/#\{Time.now....\}.eml}
   gem.email = "darwin.git@marianna.se"
   gem.authors = ["Darwin"]
   # dependencies defined in Gemfile
@@ -30,14 +30,6 @@ Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
   test.pattern = 'test/**/test_*.rb'
   test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
 end
 
 task :default => :test
