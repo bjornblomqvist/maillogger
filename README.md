@@ -23,7 +23,7 @@ The result is that all email that you call deliver on ends up in ```./log/emails
 Change log
 ----------
 
-### 0.2.1
+### 0.2.0
 
 - Fixed so that failure to send email is also logged.
 - Changed to LGPL
