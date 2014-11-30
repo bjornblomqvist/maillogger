@@ -16,7 +16,7 @@ Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "maillogger"
   gem.homepage = "http://github.com/bjornblomqvist/maillogger"
-  gem.license = "MIT"
+  gem.license = "LGPL"
   gem.summary = %Q{A simple logger for the mail gem.}
   gem.description = %Q{A delivery method that wrapps another delivery method and logs all successfull deliveries. It logs to ./log/emails/#\{Time.now....\}.eml}
   gem.email = "darwin.git@marianna.se"
